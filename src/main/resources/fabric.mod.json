@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "aetherian_athenaeum",
+	"version": "1.0.0",
+	"name": "Aetherian Athenaeum",
+	"description": "A mod aiming to port all of the Diary of an 8-Bit Warrior series into Minecraft.",
+	"authors": [
+		"RatseerOfRattesse (Artist, Programmer)",
+		"Cube Kid (Author of Diary of an 8-Bit Warrior - wasn't involved in the mod)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/aetherian_athenaeum/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ratseerofrattesse.aetherian_athenaeum.AetherianAthenaeum"
+		],
+		"fabric-datagen": [
+			"ratseerofrattesse.aetherian_athenaeum.AetherianAthenaeumDataGenerator"
+		],
+		"client": [
+			"ratseerofrattesse.aetherian_athenaeum.AetherianAthenaeumClient"
+		]
+	},
+	"mixins": [
+		"aetherian_athenaeum.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
