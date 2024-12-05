@@ -1,12 +1,13 @@
 {
 	"schemaVersion": 1,
 	"id": "aetherian_athenaeum",
-	"version": "1.0.0",
+	"version": "1.00",
 	"name": "Aetherian Athenaeum",
 	"description": "A mod aiming to port all of the Diary of an 8-Bit Warrior series into Minecraft.",
 	"authors": [
 		"RatseerOfRattesse (Artist, Programmer)",
-		"Cube Kid (Author of Diary of an 8-Bit Warrior - wasn't involved in the mod)"
+		"Cube Kid (Author of Diary of an 8-Bit Warrior - wasn't involved in the mod)",
+		"Gauraaaaaaaa (Programmer of Ranking Of Things) - thanks for the rarity mixin code :)"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

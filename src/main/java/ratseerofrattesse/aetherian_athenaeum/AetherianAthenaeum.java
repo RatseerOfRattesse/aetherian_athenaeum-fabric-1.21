@@ -2,8 +2,11 @@ package ratseerofrattesse.aetherian_athenaeum;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ratseerofrattesse.aetherian_athenaeum.item.ModItemGroups;
+import ratseerofrattesse.aetherian_athenaeum.item.ModItems;
 
 public class AetherianAthenaeum implements ModInitializer {
 	public static final String MOD_ID = "aetherian_athenaeum";
@@ -19,6 +22,11 @@ public class AetherianAthenaeum implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("[AetherianAthenaeum]: Receiving update from main branch 'Entity303/Aetheria' - initializing " + AetherianAthenaeum.MOD_ID + "...");
+		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
+		if (FabricLoader.getInstance().isModLoaded("durtleminer")) {
+			LOGGER.info("[AetherianAthenaeum]: AHHHHH THERE'S DURTLES");
+		}
 	}
 }

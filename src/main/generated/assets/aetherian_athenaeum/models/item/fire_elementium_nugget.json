@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aetherian_athenaeum:item/fire_elementium_nugget"
+  }
+}

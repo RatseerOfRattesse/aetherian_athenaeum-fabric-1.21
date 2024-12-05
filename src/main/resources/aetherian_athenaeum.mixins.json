@@ -3,7 +3,8 @@
 	"package": "ratseerofrattesse.aetherian_athenaeum.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"RarityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
